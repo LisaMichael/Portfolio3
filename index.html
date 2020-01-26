@@ -546,7 +546,7 @@
                     
                     <div class="project-controls">
                         <button class="filter" data-filter="all">All</button>
-                        <button class="filter" data-filter="1">Graphic Design</button>
+                        <button class="filter" data-filter="1">AJAX and APIs</button>
                         <button class="filter" data-filter="2">Web Designs</button>
                         <button class="filter" data-filter="3">App Development</button>
                     </div>
@@ -559,11 +559,11 @@
                         
                         <div class="col-lg-4 col-md-6 col-sm-4 col-xs-6 filtr-item" data-category="1">
                             <div class="project">
-                                <img src="images/portfolio/thumbs/giftastic.jpg" alt="">
+                                <img src="images/portfolio/thumbs/friendfinder.png" alt="">
                                 <div class="ovrly">
                                 </div>
                                 <div class="buttons">
-                                    <a href="https://lisamichael.github.io/GifTastic/" class="fa fa-link"></a>
+                                    <a href="https://calm-scrubland-59608.herokuapp.com/" class="fa fa-link"></a>
                                     <a href="#portfolio-1" class="fa fa-search show-popup"></a>
                                 </div>
                             </div>
@@ -572,11 +572,33 @@
                         <!-- Popup Content -->
                         
                         <div class="pop-up-box" id="portfolio-1">
-                            <img alt="" src="images/portfolio/image_1.jpg" class=" hidden-xs">
+                            <img alt="" src="images/portfolio/thumbs/friendfinder.png" class=" hidden-xs">
                             <div class="popup-content">
-                                <h3>GROCERY PORTAL</h3>
+                                <h3>Friend Finder</h3>
                                 <p>
-                                    Grocery Portal is an inventory application used to add and perform searches of grocery items in a grocery store.  Updates to look forward to are map locations for items or departments
+                                    Answer the Survey questions and Friend Finder will match friends with the person you are most compatible with.</p>
+<p>
+                                    Developing the application:
+The local HTTP server is created using the server.js file, which is the file where the HTTP ports are configured.
+
+The server.js requires the npms: express and path.
+
+The application will require two route.js files:
+
+Your htmlRoutes.js file should include two routes:
+
+A GET Route to /survey which should display the survey page. A default, catch-all route that leads to home.html which displays the home page.
+<p>
+
+Your apiRoutes.js file should contain two routes:</p>
+
+A GET route with the url /api/friends. This will be used to display a JSON of all possible friends.
+</p>
+A POST routes /api/friends. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic. </p>
+
+
+
+The modal displays both the name and picture of the closest match.
                                 </p>
                                 <a href="#">PREVIEW</a>
                             </div>
@@ -603,7 +625,7 @@
                         <!-- Popup Content -->
                         
                         <div class="pop-up-box" id="portfolio-2">
-                            <img alt="" src="images/portfolio/image_2.jpg" class=" hidden-xs">
+                            <img alt="" src="images/portfolio/thumbs/giftastic.jpg" class=" hidden-xs">
                             <div class="popup-content">
                                 <h3>PROJECT NAME</h3>
                                 <p>
